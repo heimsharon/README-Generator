@@ -1,0 +1,18 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "README.md Generator",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "initialize":"node index.js"
+  },
+  "author": "sh",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "fs":"^0.0.1-security",
+    "inquirer":"^12.4.1"
+  }
+}
