@@ -20,12 +20,12 @@ const questions = [
     type: "input",
     name: "Installation",
     message:
-      "Please list/describe installation instructions required for the project.".magenta,
+      "List/describe installation instructions of the required packages for the project.".magenta,
   },
   {
     type: "input",
     name: "Usage",
-    message: "When can this project can be used.".magenta,
+    message: "How to initialize/utilize your application/code/project.".magenta,
   },
   {
     type: "input",

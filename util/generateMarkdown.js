@@ -30,7 +30,7 @@ function renderLicenseBadge(license) {
   //Function to generate the markdown for the README file.
   function generateMarkdown(data) {
     return ` 
-   # ${data.Title}
+  # ${data.Title}
   
   ## Description
   
@@ -47,11 +47,11 @@ function renderLicenseBadge(license) {
   
   ## Installation
   
-  ${data.Installation}
+  To install the necessary packages,prior to initializing the application,run the following command/s:${data.Installation}
   
   ## Usage
   
-  ${data.Usage}
+  To initialize ${data.Usage}
   
   ${renderLicenseSection(data.License)}
   
