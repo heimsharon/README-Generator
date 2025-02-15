@@ -13,6 +13,6 @@
   "dependencies": {
     "colors": "^1.4.0",
     "fs": "^0.0.1-security",
-    "inquirer": "^12.4.1"
+    "inquirer": "^8.2.4"
   }
 }

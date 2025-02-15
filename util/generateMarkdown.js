@@ -1,5 +1,3 @@
-//Function that returns a license badge based on users choice.
-//If there is no license,it will  return an empty string.
 function renderLicenseBadge(license) {
   if (!license || license === "None") {
     return "";
@@ -7,8 +5,6 @@ function renderLicenseBadge(license) {
   return `![License](https://img.shields.io/badge/license-${license}-blue.svg)`;
 }
 
-//Function that returns the license link.
-//If there is no license, it will return an empty string.
 function renderLicenseLink(license) {
   if (!license || license === "None") {
     return "";
@@ -16,8 +12,6 @@ function renderLicenseLink(license) {
   return `[License](https://opensource.org/licenses/${license})`;
 }
 
-//Function that returns the license section of README.
-//If there is no license,it returns an empty string.
 function renderLicenseSection(license) {
   if (!license || license === "None") {
     return "";
@@ -27,7 +21,6 @@ function renderLicenseSection(license) {
   This project is licensed under the ${license} license.`;
 }
 
-//Function to generate the markdown for the README file.
 function generateMarkdown(data) {
   return ` 
   # ${data.Title}
@@ -47,13 +40,15 @@ function generateMarkdown(data) {
   
   ## Installation
   
-  To install the necessary packages,prior to initializing the application,run the following command/s:${
-    data.Installation
-  }
+  To install the necessary packages, follow these steps before running the application:
+  
+  ${data.Installation}
   
   ## Usage
-  
-  To initialize ${data.Usage}
+
+  To initialize the application:
+ 
+  ${data.Usage}
   
   ${renderLicenseSection(data.License)}
   
@@ -61,20 +56,21 @@ function generateMarkdown(data) {
   
   ## Contributing
   
+  If you would like to contribute to this project, please follow these guidelines:
+ 
   ${data.Contributing}
   
   ## Tests
+  
+  To run tests, follow these instructions:
   
   ${data.Tests}
   
   ## Questions
   
-  If you have any questions, please feel free to contact me at ${data.Email}.
-  
-  You can also find more of my work at [${data.Github}](https://github.com/${
-    data.Github
-  }).
-  `;
+  If you have any questions, please feel free to contact me at:
+  - Email: [${data.Email}](mailto:${data.Email})
+  - GitHub: [${data.Github}](https://github.com/${data.Github})`;
 }
 
 export default generateMarkdown;
